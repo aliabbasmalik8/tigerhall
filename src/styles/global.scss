@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+body{
+  margin: 0;
+  background-color: $background-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+$white:#FFFFFF;
+$black: #000000;
+
+$grey700: #989898;
+$grey1000: #333333;
+
+$teal800: #003238;
+$teal1000: #001315;
+
+$orange600: #FF8615;
+
+$text-primary-color: var(--text-primary-color, $white);
+$text-secondary-color: var(--text-secondary-color, $grey700);
+$text-ternary-color: var(--text-ternary-color, $black);
+$text-highlighted-color: var(--text-highlighted-color, $orange600);
+
+$background-color: var(--background-color, $teal1000);
+$search-background-color: var(--search-background-color, $teal800);
+$content-card-background-color: var(--content-card-background-color, $white);

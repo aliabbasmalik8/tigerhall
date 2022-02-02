@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useQuery } from "@apollo/client";
+
+import { CONTENT_CARDS_QUERY } from "./apollo/queries"
+
+import SearchBox from "components/SearchBox";
+import ContentCard from "components/ContentCard"
+
+import './app.scss'
 
 function App() {
+  const { data , loading, error } = useQuery(CONTENT_CARDS_QUERY, { variables: {offset: 1}});
+
+  console.log('data', data?.contentCards?.edges)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-app">
+      <p className="title">Search</p>
+      <SearchBox />
+      <div className="content-cards-banner">
+        {data?.contentCards?.edges?.map((edge, index) => <ContentCard {...{ key: index, ...edge }} />)}
+      </div>
     </div>
   );
 }

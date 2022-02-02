@@ -1,0 +1,27 @@
+@import 'styles/variables.scss';
+
+.main-app{
+  padding: 15px 60px 45px 60px;
+  max-width: 1000px;
+
+  margin: auto;
+  .title{
+    font-size: 14px;
+    line-height: 17.3px;
+    font-weight: 700;
+    color: $text-primary-color;
+
+    margin-bottom: 2.7px;
+  }
+
+  .content-cards-banner{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 19px;
+  }
+}

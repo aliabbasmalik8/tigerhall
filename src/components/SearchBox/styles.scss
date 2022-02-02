@@ -1,0 +1,16 @@
+@import 'styles/variables.scss';
+
+.search-box-banner{
+  .search-input{
+    height: 29px;
+    width: calc(100% - 16px);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 8px;
+
+    background-color: $teal800;
+    color: $grey700;
+    font-size: 400;
+  }
+}
