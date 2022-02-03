@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import { IMAGE_BASE_URL, removeBaseURL} from "helpers/image"
 
